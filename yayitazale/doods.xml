@@ -51,7 +51,13 @@
            </Port>
        </Publish>
    </Networking>
-  <Environment/>
+  <Environment>
+    <Variable>
+          <Value>INFO</Value>
+          <Name>LOGGER_LEVEL</Name>
+          <Mode/>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/doods/models</HostDir>
