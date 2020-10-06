@@ -40,7 +40,7 @@
   <Repository>snowzach/doods</Repository>
   <Support>https://forums.unraid.net/topic/38974-support-limetechs-docker-repository/</Support>
   <Privileged>false</Privileged>
-  <TemplateURL>https://github.com/yayitazale/unraid-templates/blob/main/doods.xml</TemplateURL>
+  <TemplateURL>https://github.com/yayitazale/unraid-templates/blob/main/yayitazale/doods.xml</TemplateURL>
   <Networking>
        <Mode>bridge</Mode>
        <Publish>
