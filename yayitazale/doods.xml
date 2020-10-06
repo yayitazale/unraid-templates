@@ -87,7 +87,7 @@ EdgeTPU models can be downloaded from here: [a href="https://coral.ai/models/"]h
   <Labels/>
   <Config Name="API port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Models" Target="/opt/doods/models" Default="" Mode="rw" Description="Container Path: /opt/doods/models" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/doods/models</Config>
-  <Config Name="Config file" Target="/opt/doods/config.yaml" Default="" Mode="rw" Description="Container Path: /opt/doods/config.yaml" Type="Path" Display="always" Required="true" Mask="false">mnt/user/appdata/doods/config.yaml</Config>
+  <Config Name="Config file" Target="/opt/doods/config.yaml" Default="" Mode="rw" Description="Container Path: /opt/doods/config.yaml" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/doods/config.yaml</Config>
   <Config Name="Coral Edge TPU USB Device (optional)" Target="" Default="" Mode="" Description="/dev/bus/usb/" Type="Device" Display="always" Required="false" Mask="false">/dev/bus/usb/</Config>
   <Config Name="Logger level" Target="LOGGER_LEVEL" Default="" Mode="" Description="Logger level by default INFO, can change to DEBUG" Type="Variable" Display="advanced" Required="false" Mask="false">INFO</Config>
 </Container>
