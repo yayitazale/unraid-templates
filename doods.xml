@@ -23,6 +23,9 @@
     [span style='color: red;'][b]Note:[/b][/span] If you want to run it in docker using the Coral EdgeTPU, you need to pass the device [b]/dev/bus/usb[/b] to the container.
     See the documentation for more details.[br][br]
 
+    [span style='color: red;'][b]Note:[/b][/span] The log level is setup to [b]INFO[/b] by default, you can change it to [b]DEBUG[/b] to at first time to debug the models output working.
+    See the documentation for more details.[br][br]
+
     [span style='color: red;'][b]Detector Types Supported[/b][/span]
     [br][br]
     tflite - Tensorflow lite models - Supports Coral EdgeTPU if hwAccel: true and appropriate model is used
@@ -36,8 +39,8 @@
   <GitHub>https://github.com/snowzach/doods/</GitHub>
   <Repository>snowzach/doods</Repository>
   <Support>https://forums.unraid.net/topic/38974-support-limetechs-docker-repository/</Support>
-  <BindTime>true</BindTime>
   <Privileged>false</Privileged>
+  <TemplateURL>https://github.com/yayitazale/unraid-templates/blob/main/doods.xml</TemplateURL>
   <Networking>
        <Mode>bridge</Mode>
        <Publish>
@@ -60,11 +63,13 @@
       <ContainerDir>/opt/doods/config.yaml</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    LOGGER_LEVEL debug
   </Data>
   <Config Name="API Port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false"/>
   <Config Name="Coral Edge TPU USB Device" Target="" Default="" Mode="/dev/bus/usb" Description="Container Device: RTL-SDR" Type="Device" Display="always" Required="false" Mask="false"/>
   <Config Name="Models" Target="/opt/doods/models" Default="" Mode="rw" Description="Container Path: /opt/doods/models" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/doods/models</Config>
   <Config Name="Config file" Target="/opt/doods/config.yaml" Default="" Mode="rw" Description="Container Path: /opt/doods/config.yaml" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/doods/config.yaml</Config>
+  <Config Name="Logger level" Target="LOGGER_LEVEL" Default="" Mode="rw" Description="Logger level by default INFO" Type="Variable" Display="advanced" Required="false" Mask="false">INFO</Config>
   <WebUI/>
   <Banner></Banner>
   <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1200px-Tensorflow_logo.svg.png</Icon>
