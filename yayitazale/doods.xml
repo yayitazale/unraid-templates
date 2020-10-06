@@ -12,15 +12,14 @@
   <Description>
     DOODS is a GRPC/REST service that detects objects in images using TensorFlow. It's designed to be very easy to use, run as a container and available remotely. Compatible with Coral Edge TPU usb accelerator using tflite.[br][br]
 
-    Steps to rus the docker:
-    1. Create the app folder [b]/appdata/doods[/b] and copy the [a href="https://raw.githubusercontent.com/snowzach/doods/master/fetch_models.sh"]
-    fetch_models.sh[/a] there. [br][br]
+    Steps to rus the docker:[br][br]
+    1. Create the app folder [b]/appdata/doods[/b] and copy the [a href="https://raw.githubusercontent.com/snowzach/doods/master/fetch_models.sh"]fetch_models.sh[/a] there. [br][br]
     2. Use the unraid console to run it to create a models directory and download several models and outputs and an [b]example.yaml[/b] config file.[br][br]
     3. Copy the example and with name config.yaml and edit according to your need. [br][br]
     4. Plug the Coral USB if you are going to use it.[br][br]
-    5. Run de docker.
+    5. Run de docker.[br][br]
 
-    [span style='color: red;'][b]Note:[/b][/span] If you want to run it in docker using the Coral EdgeTPU, you need to pass the device [b]/dev/bus/usb[/b] to the container.
+    [span style='color: red;'][b]Note:[/b][/span] If you want to run it in docker using the Coral EdgeTPU, you need to pass the device [b]/dev/bus/usb[/b] to the container and modify the config file with hwAccel: true.
     See the documentation for more details.[br][br]
 
     [span style='color: red;'][b]Note:[/b][/span] The log level is setup to [b]INFO[/b] by default, you can change it to [b]DEBUG[/b] to at first time to debug the models output working.
@@ -32,8 +31,7 @@
     [br][br]
     tensorflow - Tensorflow
     [br][br]
-    EdgeTPU models can be downloaded from here: [a href="https://coral.ai/models/"]
-    https://coral.ai/models/[/a] (Use the Object Detection Models)
+    EdgeTPU models can be downloaded from here: [a href="https://coral.ai/models/"]https://coral.ai/models/[/a] (Use the Object Detection Models)
     [br][br]
   </Description>
   <GitHub>https://github.com/snowzach/doods/</GitHub>
