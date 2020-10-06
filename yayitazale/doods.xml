@@ -50,7 +50,7 @@
                <Protocol>tcp</Protocol>
            </Port>
        </Publish>
-   </Networking>
+  </Networking>
   <Environment/>
   <Data>
     <Volume>
