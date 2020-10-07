@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>frigate</Name>
-  <Repository>blakeblackshear/frigate</Repository>
+  <Repository>blakeblackshear/frigate:stable</Repository>
   <Registry>https://hub.docker.com/r/blakeblackshear/frigate/</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -28,10 +28,10 @@ Use of a Google Coral Accelerator is optional, but highly recommended. On my Int
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL/>
   <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1200px-Tensorflow_logo.svg.png</Icon>
-  <ExtraParams/>
-  <PostArgs>--shm-size=512m</PostArgs>
+  <ExtraParams>--shm-size=512m</ExtraParams>
+  <PostArgs/>
   <CPUset/>
-  <DateInstalled>1602053216</DateInstalled>
+  <DateInstalled>1602059952</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>[b]NVR With Realtime Object Detection for IP Cameras[/b]&#xD;
@@ -62,12 +62,12 @@ Use of a Google Coral Accelerator is optional, but highly recommended. On my Int
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/frigate</HostDir>
-      <ContainerDir>/config:ro</ContainerDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/etc/localtime</HostDir>
-      <ContainerDir>/etc/localtime:ro</ContainerDir>
+      <ContainerDir>/etc/localtime</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
@@ -80,8 +80,8 @@ Use of a Google Coral Accelerator is optional, but highly recommended. On my Int
   </Environment>
   <Labels/>
   <Config Name="Edge Coral TPU USB" Target="" Default="" Mode="" Description="/dev/bus/usb" Type="Device" Display="always" Required="false" Mask="false">/dev/bus/usb</Config>
-  <Config Name="Path con config" Target="/config:ro" Default="" Mode="rw" Description="/mnt/user/appdata/frigate" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/frigate</Config>
-  <Config Name="Localtime" Target="/etc/localtime:ro" Default="" Mode="rw" Description="/etc/localtime" Type="Path" Display="always" Required="true" Mask="false">/etc/localtime</Config>
+  <Config Name="Path con config" Target="/config" Default="" Mode="rw" Description="/mnt/user/appdata/frigate" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/frigate</Config>
+  <Config Name="Localtime" Target="/etc/localtime" Default="" Mode="rw" Description="/etc/localtime" Type="Path" Display="always" Required="true" Mask="false">/etc/localtime</Config>
   <Config Name="HTTP port" Target="5000" Default="" Mode="tcp" Description="5000" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
   <Config Name="Frigate RTSP Password" Target="FRIGATE_RTSP_PASSWORD" Default="" Mode="" Description="Container Variable: FRIGATE_RTSP_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">'password'</Config>
 </Container>
