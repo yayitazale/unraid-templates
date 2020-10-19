@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>frigate</Name>
-  <Repository>blakeblackshear/frigate:stable</Repository>
+  <Repository>blakeblackshear/frigate:0.7.1-amd64</Repository>
   <Registry>https://hub.docker.com/r/blakeblackshear/frigate/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/blakeblackshear/frigate/</Support>
   <Project>https://github.com/blakeblackshear/frigate</Project>
   <Overview>[b]NVR With Realtime Object Detection for IP Cameras[/b]&#xD;
@@ -31,7 +31,7 @@ Use of a Google Coral Accelerator is optional, but highly recommended. On my Int
   <ExtraParams>--shm-size=512m</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1602059952</DateInstalled>
+  <DateInstalled>1603127502</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>[b]NVR With Realtime Object Detection for IP Cameras[/b]&#xD;
