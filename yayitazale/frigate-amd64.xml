@@ -27,11 +27,11 @@ Use of a Google Coral Accelerator is optional, but highly recommended. On my Int
   <Category>HomeAutomation: Security:</Category>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL/>
-  <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1200px-Tensorflow_logo.svg.png</Icon>
+  <Icon>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/frigate_unraid.PNG</Icon>
   <ExtraParams>--shm-size=512m</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1603265522</DateInstalled>
+  <DateInstalled>1607672518</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>[b]NVR With Realtime Object Detection for IP Cameras[/b]&#xD;
@@ -66,24 +66,24 @@ Use of a Google Coral Accelerator is optional, but highly recommended. On my Int
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/tmpfs</HostDir>
-      <ContainerDir>/cache</ContainerDir>
+      <HostDir>/etc/localtime</HostDir>
+      <ContainerDir>/etc/localtime</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/videos/camera</HostDir>
+      <HostDir>/mnt/user/Media/cctv</HostDir>
       <ContainerDir>/clips</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/etc/localtime</HostDir>
-      <ContainerDir>/etc/localtime</ContainerDir>
+      <HostDir>/cache</HostDir>
+      <ContainerDir>/tmpfs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment>
     <Variable>
-      <Value>'password'</Value>
+      <Value>enterpassword</Value>
       <Name>FRIGATE_RTSP_PASSWORD</Name>
       <Mode/>
     </Variable>
@@ -94,7 +94,6 @@ Use of a Google Coral Accelerator is optional, but highly recommended. On my Int
   <Config Name="Localtime" Target="/etc/localtime" Default="" Mode="rw" Description="/etc/localtime" Type="Path" Display="always" Required="true" Mask="false">/etc/localtime</Config>
   <Config Name="HTTP port" Target="5000" Default="" Mode="tcp" Description="5000" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
   <Config Name="Frigate RTSP Password" Target="FRIGATE_RTSP_PASSWORD" Default="" Mode="" Description="Container Variable: FRIGATE_RTSP_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">enterpassword</Config>
-  <Config Name="GPU Mapping" Target="" Default="" Mode="" Description="Container Device: " Type="Device" Display="always" Required="false" Mask="false">/dev/dri/</Config>
-  <Config Name="Cache TempFS is best" Target="/cache" Default="" Mode="rw" Description="Container Path: /cache" Type="Path" Display="always" Required="false" Mask="false">/tmpfs</Config>
-  <Config Name="Recordings if enabled in config" Target="/clips" Default="/clips" Mode="rw" Description="Container Path: /clips" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/videos/camera</Config>
-</Container>
+  <Config Name="Recordings if enabled in config" Target="/clips" Default="/mnt/user/Media/frigate/clips" Mode="rw" Description="Container Path: /mnt/user/videos/camera" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Media/cctv</Config>
+  <Config Name="Cache TempFS is best" Target="/tmpfs" Default="" Mode="rw" Description="Container Path: /tmpfs" Type="Path" Display="always" Required="false" Mask="false">/cache</Config>
+  <Config Name="GPU Mapping" Target="" Default="" Mode="" Description="Container Device: " Type="Device" Display="advanced-hide" Required="false" Mask="false">/dev/dri/</Config>
