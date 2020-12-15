@@ -97,3 +97,4 @@ Use of a Google Coral Accelerator is optional, but highly recommended. On my Int
   <Config Name="Recordings if enabled in config" Target="/clips" Default="/mnt/user/Media/frigate/clips" Mode="rw" Description="Container Path: /mnt/user/videos/camera" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Media/cctv</Config>
   <Config Name="Cache TempFS is best" Target="/tmpfs" Default="" Mode="rw" Description="Container Path: /tmpfs" Type="Path" Display="always" Required="false" Mask="false">/cache</Config>
   <Config Name="GPU Mapping" Target="" Default="" Mode="" Description="Container Device: " Type="Device" Display="advanced-hide" Required="false" Mask="false">/dev/dri/</Config>
+</<ontainer>
