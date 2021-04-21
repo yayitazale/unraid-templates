@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/98064-support-blakeblackshear-frigate/</Support>
   <Project>https://github.com/blakeblackshear/frigate</Project>
   <Overview>[b]NVR With Realtime Object Detection for IP Cameras[/b]&#xD;
