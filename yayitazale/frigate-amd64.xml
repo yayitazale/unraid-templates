@@ -9,27 +9,6 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/98064-support-blakeblackshear-frigate/</Support>
   <Project>https://github.com/blakeblackshear/frigate</Project>
-  <Overview>[b]NVR With Realtime Object Detection for IP Cameras[/b]&#xD;
-&#xD;
-Uses OpenCV and Tensorflow to perform realtime object detection locally for IP cameras. Designed for integration with HomeAssistant or others via MQTT.&#xD;
-&#xD;
-Use of a Google Coral Accelerator is optional, but highly recommended. On my Intel i7 processor, I can process 2-3 FPS with the CPU. The Coral can process 100+ FPS with very low CPU load.&#xD;
-&#xD;
-    *Leverages multiprocessing heavily with an emphasis on realtime over processing every frame&amp;amp;#xD;&#xD;
-    *Uses a very low overhead motion detection to determine where to run object detection&amp;amp;#xD;&#xD;
-    *Object detection with Tensorflow runs in a separate process&amp;amp;#xD;&#xD;
-    *Object info is published over MQTT for integration into HomeAssistant as a binary sensor&amp;amp;#xD;&#xD;
-    *An endpoint is available to view an MJPEG stream for debugging, but should not be used continuously&amp;amp;#xD;&#xD;
-&#xD;
-[span style='color: red;'][b]Note:[/b][/span] A config.yml file [b]must exist[/b] in the config directory. See example [a href="https://github.com/blakeblackshear/frigate/blob/master/config/config.example.yml"]here[/a] and device specific info can be found [a href="https://github.com/blakeblackshear/frigate/blob/master/docs/DEVICES.md"]here[/a]. See the documentation for more details.&#xD;
-&#xD;
-[span style='color: red;'][b]Note:[/b][/span] You can map an Intel integrated GPU or an Nvidia GPU to use hardware accel. on ffmpeg image encode/decode. In the first place you only need to keep the /dev/dri/ device. If you want to use a nvidia GPU on ffmpeg you need to follow [https://forums.unraid.net/topic/98978-plugin-nvidia-driver/?tab=comments#comment-913250&amp;amp;searchlight=1"]this steps[/a]&#xD;
-&#xD;
-[span style='color: red;'][b]Note:[/b][/span] If you are using a PCI Coral instead of a USB one, upgrade your Unraid system to stable 6.9.0 and then install first the needed drivers going to the CA APP and searching for [b]Coral-Driver[/b] (thanks to ich777)&#xD;
-&#xD;
-&#xD;
-&#xD;
-&#xD;
 [b]NVR With Realtime Object Detection for IP Cameras[/b]&#xD;
 &#xD;
 Uses OpenCV and Tensorflow to perform realtime object detection locally for IP cameras. Designed for integration with HomeAssistant or others via MQTT.&#xD;
