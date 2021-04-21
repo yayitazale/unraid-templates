@@ -9,6 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/98064-support-blakeblackshear-frigate/</Support>
   <Project>https://github.com/blakeblackshear/frigate</Project>
+<Overview>
 [b]NVR With Realtime Object Detection for IP Cameras[/b]&#xD;
 &#xD;
 Uses OpenCV and Tensorflow to perform realtime object detection locally for IP cameras. Designed for integration with HomeAssistant or others via MQTT.&#xD;
