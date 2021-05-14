@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/108652-support-thejf-antennas/</Support>
   <Project>https://github.com/TheJF/antennas</Project>
-  <Overview>HDHomeRun emulator for Plex DVR to connect to Tvheadend. &#xD;
+  <Overview>HDHomeRun emulator for Plex/Jellyfin/Emby DVR to connect to Tvheadend. &#xD;
 [br][br]&#xD;
 To run this container, [b]first create a config.yaml on the config folder[/b] with the following lines (changing to the IPs, ports and tuner count of your system):&#xD;
 [br][br]&#xD;
@@ -23,10 +23,10 @@ tuner_count: 4[br][br]</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1620976965</DateInstalled>
+  <DateInstalled>1620977046</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>HDHomeRun emulator for Plex DVR to connect to Tvheadend. &#xD;
+  <Description>HDHomeRun emulator for Plex/Jellyfin/Emby DVR to connect to Tvheadend. &#xD;
 [br][br]&#xD;
 To run this container, [b]first create a config.yaml on the config folder[/b] with the following lines (changing to the IPs, ports and tuner count of your system):&#xD;
 [br][br]&#xD;
