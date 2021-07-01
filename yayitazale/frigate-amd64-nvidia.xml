@@ -79,13 +79,8 @@ Uses OpenCV and Tensorflow to perform realtime object detection locally for IP c
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/Media/frigate/clips</HostDir>
-      <ContainerDir>/media/frigate/clips</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/Media/frigate/recordings</HostDir>
-      <ContainerDir>/media/frigate/recordings</ContainerDir>
+      <HostDir>/mnt/user/Media/frigate</HostDir>
+      <ContainerDir>/media/frigate</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
@@ -118,8 +113,7 @@ Uses OpenCV and Tensorflow to perform realtime object detection locally for IP c
   </Environment>
   <Labels/>
   <Config Name="Config Path" Target="/config" Default="/mnt/user/appdata/frigate-nvidia" Mode="rw" Description="/mnt/user/appdata/frigate" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/frigate-nvidia</Config>
-  <Config Name="Clips path" Target="/media/frigate/clips" Default="/mnt/user/Media/frigate/clips" Mode="rw" Description="Container Path: /media/frigate/clips" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/frigate/clips</Config>
-  <Config Name="Recordings path" Target="/media/frigate/recordings" Default="/mnt/user/Media/frigate/recordings" Mode="rw" Description="Container Path: /media/frigate/recordings" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/frigate/recordings</Config>
+  <Config Name="Media path" Target="/media/frigate" Default="/mnt/user/Media/frigate" Mode="rw" Description="Container Path: /media/frigate" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/frigate</Config>
   <Config Name="HTTP port" Target="5000" Default="" Mode="tcp" Description="Container Port: 5000" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
   <Config Name="RTMP port" Target="1935" Default="" Mode="tcp" Description="Container Port: 1935" Type="Port" Display="always" Required="true" Mask="false">1935</Config>
   <Config Name="Frigate RTSP Password" Target="FRIGATE_RTSP_PASSWORD" Default="" Mode="" Description="Container Variable: FRIGATE_RTSP_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">enterpassword</Config>
