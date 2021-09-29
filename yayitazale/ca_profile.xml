@@ -2,7 +2,7 @@
 <Maintainer>
   <Icon>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/yayitazale.jpg</Icon>
   <Profile>
-    Creating Docker containers with a little different approach than most developers, the container only has the dependencies installed and also the start script and downloads the application itself on the first start and updates the application on every start/restart of the container.
+   Creating Docker templates for personal projects
   </Profile>
   <DonateLink>https://paypal.me/JosebaEgiaLarrinaga</DonateLink>
   <DonateText>If you like my work please consider Donating.</DonateText>
