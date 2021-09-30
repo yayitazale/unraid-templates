@@ -1,1 +1,1 @@
-Templates to UnRaid
+Templates for UnRaid
