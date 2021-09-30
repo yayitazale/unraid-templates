@@ -23,7 +23,7 @@
   <Category>Tools: MediaApp:Other Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5004]</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/yayitazale/unraid-templates/raw/main/antennas_logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/antennas.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
