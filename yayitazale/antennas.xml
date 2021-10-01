@@ -24,7 +24,7 @@
   </Requires>
   <Category>Tools: MediaApp:Other Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5004]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/yayitazale/antennas.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/antennas.png</Icon>
   <ExtraParams/>
   <PostArgs/>
