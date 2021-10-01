@@ -13,7 +13,7 @@
   To run this container, [b]first create a config.yml on the config folder[/b] with the following lines (changing to the IPs, ports and tuner count of your system)[br][br]
     tvheadend_url: http://user:pas@X.X.X.X:9981[br][br]
     antennas_url: http://X.X.X.X:5004[br][br]
-    tuner_count: 4 </Requires>
+    tuner_count: 4
   </Overview>
   <Requires>
     To run this container, [b]first create a config.yml on the config folder[/b] with the following lines (changing to the IPs, ports and tuner count of your system)
