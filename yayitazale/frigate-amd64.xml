@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
   <Support>https://forums.unraid.net/topic/98064-support-blakeblackshear-frigate/</Support>
-  <Project>https://github.com/blakeblackshear/frigate</Project>
+  <Project>https://docs.frigate.video/</Project>
   <Overview>[b]NVR With Realtime Object Detection for IP Cameras[/b]&#xD;
 [br][br]&#xD;
 Uses OpenCV and Tensorflow to perform realtime object detection locally for IP cameras. Designed for integration with HomeAssistant or others via MQTT. Use of a Google Coral Accelerator is optional, but highly recommended. On my Intel i7 processor, I can process 2-3 FPS with the CPU. The Coral can process 100+ FPS with very low CPU load.&#xD;
@@ -52,7 +52,7 @@ Uses OpenCV and Tensorflow to perform realtime object detection locally for IP c
 [br]&#xD;
 - An endpoint is available to view an MJPEG stream for debugging, but should not be used continuously&#xD;
 [br][br]&#xD;
-[span style='color: red;'][b]Note:[/b][/span] A config.yml file [b]must exist[/b] in the config directory. See example [a href="https://github.com/blakeblackshear/frigate/blob/master/config/config.example.yml"]here[/a] and device specific info can be found [a href="https://github.com/blakeblackshear/frigate/blob/master/docs/DEVICES.md"]here[/a]. See the documentation for more details.&#xD;
+[span style='color: red;'][b]Note:[/b][/span] A config.yml file [b]must exist[/b] in the config directory. See example [a href="https://docs.frigate.video/guides/getting_started"]here[/a].&#xD;
 [br]&#xD;
 [span style='color: red;'][b]Note:[/b][/span] If you want add a Nvidia GPU to use hardware accel. on ffmpeg image encode/decode use the correspondig app.&#xD;
 [br]&#xD;
