@@ -32,7 +32,7 @@ Uses OpenCV and Tensorflow to perform realtime object detection locally for IP c
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/yayitazale/frigate-amd64.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/frigate.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--shm-size=5G</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1620578823</DateInstalled>
