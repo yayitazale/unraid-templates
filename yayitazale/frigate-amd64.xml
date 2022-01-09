@@ -35,7 +35,7 @@ Uses OpenCV and Tensorflow to perform realtime object detection locally for IP c
   <ExtraParams>--shm-size=5G</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1620578823</DateInstalled>
+  <DateInstalled>1641728477</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>[b]NVR With Realtime Object Detection for IP Cameras[/b]&#xD;
@@ -52,7 +52,7 @@ Uses OpenCV and Tensorflow to perform realtime object detection locally for IP c
 [br]&#xD;
 - An endpoint is available to view an MJPEG stream for debugging, but should not be used continuously&#xD;
 [br][br]&#xD;
-[span style='color: red;'][b]Note:[/b][/span] A config.yml file [b]must exist[/b] in the config directory. See example [a href="https://docs.frigate.video/guides/getting_started"]here[/a].&#xD;
+[span style='color: red;'][b]Note:[/b][/span] A config.yml file [b]must exist[/b] in the config directory. See example [a href="https://github.com/blakeblackshear/frigate/blob/master/config/config.example.yml"]here[/a] and device specific info can be found [a href="https://github.com/blakeblackshear/frigate/blob/master/docs/DEVICES.md"]here[/a]. See the documentation for more details.&#xD;
 [br]&#xD;
 [span style='color: red;'][b]Note:[/b][/span] If you want add a Nvidia GPU to use hardware accel. on ffmpeg image encode/decode use the correspondig app.&#xD;
 [br]&#xD;
@@ -107,7 +107,7 @@ Uses OpenCV and Tensorflow to perform realtime object detection locally for IP c
   <Config Name="HTTP port" Target="5000" Default="" Mode="tcp" Description="Container Port: 5000" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
   <Config Name="RTMP port" Target="1935" Default="" Mode="tcp" Description="Container Port: 1935" Type="Port" Display="always" Required="true" Mask="false">1935</Config>
   <Config Name="Frigate RTSP Password" Target="FRIGATE_RTSP_PASSWORD" Default="" Mode="" Description="Container Variable: FRIGATE_RTSP_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">enterpassword</Config>
-  <Config Name="TPU Mapping" Target="/dev/bus/usb" Default="" Mode="" Description="Container Path: /dev/bus/usb" Type="Device" Display="always" Required="false" Mask="false">/dev/bus/usb</Config>
+  <Config Name="TPU Mapping" Target="/dev/bus/usb" Default="" Mode="" Description="Use " Type="Device" Display="always" Required="false" Mask="false">/dev/bus/usb</Config>
   <Config Name="Intel/AMD GPU mapping" Target="" Default="" Mode="" Description="Container Device: /dev/dri/renderD128" Type="Device" Display="always" Required="false" Mask="false">/dev/dri/renderD128</Config>
   <Config Name="Cache to RAM" Target="/tmp/cache" Default="" Mode="rw" Description="Container Path: /tmp/cache" Type="Path" Display="advanced-hide" Required="true" Mask="false">/tmp/frigate</Config>
   <Config Name="Localtime" Target="/etc/localtime" Default="" Mode="rw" Description="/etc/localtime" Type="Path" Display="advanced-hide" Required="true" Mask="false">/etc/localtime</Config>
