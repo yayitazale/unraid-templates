@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/118806-support-grafana-grafana-image-renderer/</Support>
-  <Project> https://github.com/grafana/grafana-image-renderer/blob/master/docs/remote_rendering_using_docker.md</Project>
+  <Project>https://github.com/grafana/grafana-image-renderer/blob/master/docs/remote_rendering_using_docker.md</Project>
   <Overview>A Grafana remote image renderer that handles rendering panels &amp;amp; dashboards to PNGs using headless chrome.&#xD;
 [br][br]&#xD;
 Read Grafana Image Renderer documentation and see usage instructions at [b][u][a "https://github.com/grafana/grafana-image-renderer/blob/master/docs/remote_rendering_using_docker.md"]projects page[/a][/b][/u].&#xD;
