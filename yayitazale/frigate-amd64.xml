@@ -23,7 +23,7 @@ Uses OpenCV and Tensorflow to perform realtime object detection locally for IP c
 [br]&#xD;
 - An endpoint is available to view an MJPEG stream for debugging, but should not be used continuously&#xD;
 [br][br]&#xD;
-[span style='color: red;'][b]Note:[/b][/span] A config.yml file [b]must exist[/b] in the config directory. See example [a href="https://github.com/blakeblackshear/frigate/blob/master/config/config.example.yml"]here[/a] and device specific info can be found [a href="https://github.com/blakeblackshear/frigate/blob/master/docs/DEVICES.md"]here[/a]. See the documentation for more details.&#xD;
+[span style='color: red;'][b]Note:[/b][/span] A config.yml file [b]must exist[/b] in the config directory. See example [a href="https://docs.frigate.video/configuration/index"]here[/a]. See the [a href="https://docs.frigate.video/"]documentation[/a] for more details.&#xD;
 [br]&#xD;
 [span style='color: red;'][b]Note:[/b][/span] If you want add a Nvidia GPU to use hardware accel. on ffmpeg image encode/decode use the correspondig app.&#xD;
 [br]&#xD;
