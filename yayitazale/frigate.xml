@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>frigate</Name>
+  <Repository>blakeblackshear/frigate:stable</Repository>
+  <Registry>https://hub.docker.com/r/blakeblackshear/frigate/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/topic/98064-support-blakeblackshear-frigate/</Support>
+  <Project>https://docs.frigate.video/</Project>
+  <Overview>A complete and local NVR designed for Home Assistant with AI object detection. Uses OpenCV and Tensorflow to perform realtime object detection locally for IP cameras.&#xD;
+&#xD;
+Use of a Google Coral Accelerator is optional, but highly recommended. The Coral will outperform even the best CPUs and can process 100+ FPS with very little overhead.&#xD;
+&#xD;
+- Tight integration with Home Assistant via a custom component&#xD;
+- Designed to minimize resource use and maximize performance by only looking for objects when and where it is necessary&#xD;
+- Leverages multiprocessing heavily with an emphasis on realtime over processing every frame&#xD;
+- Uses a very low overhead motion detection to determine where to run object detection&#xD;
+- Object detection with TensorFlow runs in separate processes for maximum FPS&#xD;
+- Communicates over MQTT for easy integration into other systems&#xD;
+- Records video with retention settings based on detected objects&#xD;
+- 24/7 recording&#xD;
+- Re-streaming via RTMP to reduce the number of connections to your camera&#xD;
+&#xD;
+[b]A config.yml file must exist in the config directory.[/b]&#xD;
+See the documentation for more details.</Overview>
+  <Category>HomeAutomation: Security:</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/yayitazale/frigate-amd64.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/frigate.png</Icon>
+  <ExtraParams>--shm-size=256mb --gpus all --mount type=tmpfs,target=/tmp/cache,tmpfs-size=1000000000</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1659427796</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>[span style='color: red;'][b]Note:[/b][/span] If you are using a PCI Coral instead of a USB one, you [b]must install[/b] first the needed drivers going to the CA APP and searching for Coral-Driver (thanks to @ich777)</Requires>
+  <Config Name="Config Path" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/frigate</Config>
+  <Config Name="Media path" Target="/media/frigate" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/frigate</Config>
+  <Config Name="HTTP port" Target="5000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
+  <Config Name="RTMP port" Target="1935" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1935</Config>
+  <Config Name="Frigate RTSP Password" Target="FRIGATE_RTSP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">enterpassword</Config>
+  <Config Name="Coral TPU Mapping" Target="/dev/bus/usb" Default="" Mode="" Description="Use /dev/bus/usb for USB devices and /dev/apex_0 for PCIe devices (you must install the drivers first for PCIe devices)" Type="Device" Display="always" Required="false" Mask="false">/dev/bus/usb</Config>
+  <Config Name="Intel/AMD GPU mapping" Target="" Default="" Mode="" Description="You can delete this if you are using Nvidia GPU" Type="Device" Display="always" Required="false" Mask="false">/dev/dri/renderD128</Config>
+  <Config Name="Localtime" Target="/etc/localtime" Default="" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/etc/localtime</Config>
+</Container>
