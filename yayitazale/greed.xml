@@ -28,8 +28,8 @@ Please refer to docs to learn how to activate it and how to use it. This contain
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1663916756</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Donate</DonateText>
+  <DonateLink>https://ko-fi.com/steffo</DonateLink>
   <Requires/>
   <Config Name="Config Path" Target="/etc/greed" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/greed/config</Config>
   <Config Name="Strings Path" Target="/usr/src/greed/strings" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/greed/strings</Config>
