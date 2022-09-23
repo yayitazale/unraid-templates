@@ -29,7 +29,7 @@ See the documentation for more details.</Overview>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/yayitazale/frigate-amd64.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/frigate.png</Icon>
-  <ExtraParams>--shm-size=256mb --gpus all --mount type=tmpfs,target=/tmp/cache,tmpfs-size=1000000000</ExtraParams>
+  <ExtraParams>--shm-size=256mb --mount type=tmpfs,target=/tmp/cache,tmpfs-size=1000000000</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1659427796</DateInstalled>
@@ -44,6 +44,6 @@ If you have multiple GPUs in your system with some allocated to VMs, make sure t
   <Config Name="RTMP port" Target="1935" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1935</Config>
   <Config Name="Frigate RTSP Password" Target="FRIGATE_RTSP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">enterpassword</Config>
   <Config Name="Coral TPU Mapping" Target="/dev/bus/usb" Default="" Mode="" Description="Use /dev/bus/usb for USB devices and /dev/apex_0 for PCIe devices (you must install the drivers first for PCIe devices)" Type="Device" Display="always" Required="false" Mask="false">/dev/bus/usb</Config>
-  <Config Name="Intel/AMD GPU mapping" Target="" Default="" Mode="" Description="You can delete this if you are using Nvidia GPU" Type="Device" Display="always" Required="false" Mask="false">/dev/dri/renderD128</Config>
+  <Config Name="Intel/AMD GPU mapping" Target="" Default="" Mode="" Description="You must delete this if you are using Nvidia GPU and add the extra parameter "--gpus all"" Type="Device" Display="always" Required="false" Mask="false">/dev/dri/renderD128</Config>
   <Config Name="Localtime" Target="/etc/localtime" Default="" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/etc/localtime</Config>
 </Container>
