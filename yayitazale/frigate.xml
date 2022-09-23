@@ -44,6 +44,6 @@ If you want to use a nvidia card to image decoding, you must add the "--gpus all
   <Config Name="RTMP port" Target="1935" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1935</Config>
   <Config Name="Frigate RTSP Password" Target="FRIGATE_RTSP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">enterpassword</Config>
   <Config Name="Coral TPU Mapping" Target="/dev/bus/usb" Default="" Mode="" Description="Use /dev/bus/usb for USB devices and /dev/apex_0 for PCIe devices (you must install the drivers first for PCIe devices)" Type="Device" Display="always" Required="false" Mask="false">/dev/bus/usb</Config>
-  <Config Name="Intel/AMD GPU mapping" Target="" Default="" Mode="" Description="You must delete this if you are using Nvidia GPU and add the extra parameter "--gpus all"" Type="Device" Display="always" Required="false" Mask="false">/dev/dri/renderD128</Config>
+  <Config Name="Intel/AMD GPU mapping" Target="" Default="" Mode="" Description="You must delete this if you are using Nvidia GPU and add the extra parameter --gpus= all" Type="Device" Display="always" Required="false" Mask="false">/dev/dri/renderD128</Config>
   <Config Name="Localtime" Target="/etc/localtime" Default="" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/etc/localtime</Config>
 </Container>
