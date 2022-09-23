@@ -35,7 +35,7 @@ See the documentation for more details.</Overview>
   <DateInstalled>1659427796</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  Requires>Note: If you are using a PCI Coral instead of a USB one, you must install first the needed drivers going to the CA APP and searching for Coral-Driver (thanks to @ich777)&#xD;
+  <Requires>Note: If you are using a PCI Coral instead of a USB one, you must install first the needed drivers going to the CA APP and searching for Coral-Driver (thanks to @ich777)&#xD;
 &#xD;
 If you have multiple GPUs in your system with some allocated to VMs, make sure to replace --gpus all with --runtime=nvidia and set the NVIDIA_DRIVER_CAPABILITIES and NVIDIA_VISIBLE_DEVICES variables to only give the container access to selected GPUs.</Requires>
   <Config Name="Config Path" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/frigate</Config>
