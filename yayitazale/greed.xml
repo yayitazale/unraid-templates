@@ -22,7 +22,7 @@ Please refer to docs to learn how to activate it and how to use it. This contain
 7. Restart the container.</Overview>
   <Category>Tools: Other:</Category>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/yayitazale/greed.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/greed.png</Icon>
   <ExtraParams/>
   <PostArgs/>
