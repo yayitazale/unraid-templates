@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/128633-support-steffo99-greed/</Support>
   <Project>https://github.com/Steffo99/greed</Project>
   <Overview>A customizable, multilanguage Telegram shop bot with Telegram Payments support!&#xD;
 &#xD;
