@@ -21,7 +21,7 @@ Please refer to docs to learn how to activate it and how to use it. This contain
 6. Stop the bot by pressing Ctrl+C.&#xD;
 7. Restart the container.</Overview>
   <Category>Tools: Other:</Category>
-  <WebUI>https://github.com/Steffo99/greed/</WebUI>
+  <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/greed.png</Icon>
   <ExtraParams/>
