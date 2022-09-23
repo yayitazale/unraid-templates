@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Greed</Name>
+  <Repository>ghcr.io/steffo99/greed</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/Steffo99/greed</Project>
+  <Overview>A customizable, multilanguage Telegram shop bot with Telegram Payments support!&#xD;
+&#xD;
+Please refer to docs to learn how to activate it and how to use it. This container is not working by itself. Brief installing instructions:&#xD;
+&#xD;
+1. Donwload and run the container&#xD;
+2. Edit the configuration file *config.toml* that was created in the *config* directory, adding your bot and payment tokens to it.&#xD;
+3. Optional: customize the files in the strings folder for custom messages.&#xD;
+4. Start the bot using the console of the container and the following command: *python -OO core.py*&#xD;
+5. Open Telegram, and send a */start* command to your bot to be automatically promoted to &#x1F4BC; Manager.&#xD;
+6. Stop the bot by pressing Ctrl+C.&#xD;
+7. Restart the container.</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI>https://github.com/Steffo99/greed/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/yayitazale/unraid-templates/main/greed.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1663916756</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Config Path" Target="/etc/greed" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/greed/config</Config>
+  <Config Name="Strings Path" Target="/usr/src/greed/strings" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/greed/strings</Config>
+  <Config Name="Data path" Target="/var/lib/greed" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/greed/data</Config>
+</Container>
